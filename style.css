@@ -1,0 +1,49 @@
+/* MAIN STYLING */
+
+body
+{
+	background: radial-gradient(white, #ffbdea);
+}
+
+/* ID STYLING */
+
+#bodybox 
+{
+	background: url(layout.png) no-repeat;
+	position: relative;
+	border: 1px solid white;
+	width: 760px;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+#mainbox
+{
+	width: 423px;
+	height: 447px;
+	overflow: auto;
+	position: relative;
+	top: 9px;
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+
+/* CLASS STYLING */
+
+.navbox
+{
+	width: 142px;
+	height: 446px;
+	margin: 9px;
+	box-sizing: border-box;
+	padding: 5px;
+	position: relative;
+	top: 9px;
+	overflow: auto;
+}
