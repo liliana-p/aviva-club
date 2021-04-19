@@ -1,8 +1,47 @@
+
 /* MAIN STYLING */
 
 body
 {
-	background: radial-gradient(white, #ffbdea);
+	background: radial-gradient(white, #ddeea1);
+	background: url(bk10.gif) repeat;
+	color: white;
+	font-family: Tahoma, monospace;
+	font-size: 11px;
+}
+
+h1 
+{
+	font-family: 'century gothic', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 3px double #ad7;
+	background-color: #ceec63;
+	text-align: center;
+}
+
+hr 
+{
+	border: none;
+	border-top: 4px double white;
+}
+
+p 
+{
+	background: #FFBCEA;
+	border: 3px double white;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+a:not(li)
+{
+	color: #ff7ae4;
+}
+
+iframe
+{
+	overflow: auto;
+	overflow-x: hidden;
 }
 
 /* ID STYLING */
@@ -11,7 +50,8 @@ body
 {
 	background: url(layout.png) no-repeat;
 	position: relative;
-	border: 1px solid white;
+	top: 35px;
+	border: 4px double white;
 	width: 760px;
 	height: 600px;
 	display: flex;
@@ -29,12 +69,17 @@ body
 	overflow: auto;
 	position: relative;
 	top: 9px;
-	padding: 12px;
 	box-sizing: border-box;
+	border: 2px solid white;
 }
 
 
 /* CLASS STYLING */
+
+.inlinediv
+{
+	display: inline-block;
+}
 
 .navbox
 {
@@ -46,4 +91,28 @@ body
 	position: relative;
 	top: 9px;
 	overflow: auto;
+	overflow-x: hidden;
+	scrollbar-width: none;
+
 }
+
+.navbox ul
+{
+	list-style-image: url(ball.gif);
+}
+
+.navbox a
+{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.navbox a:hover
+{
+	text-decoration: underline;
+}
+
