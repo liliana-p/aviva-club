@@ -4,38 +4,40 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <script>
-        $("#bookmarkme").click(function(e){
-  e.preventDefault(); // this will prevent the anchor tag from going the user off to the link
-  var bookmarkUrl = "https://liliana-p.github.io/aviva-club";
-  var bookmarkTitle = "Aviva";
+    <style>
+        
+#floatleft
+{
+    float: left;
+}
 
-  if (window.sidebar) { // For Mozilla Firefox Bookmark
-      window.sidebar.addPanel(bookmarkTitle, bookmarkUrl,"");
-  } else if( window.external || document.all) { // For IE Favorite
-      window.external.AddFavorite( bookmarkUrl, bookmarkTitle);
-  } else { // for other browsers which does not support
-       alert('Your browser does not support this bookmark action');
-       return false;
-  }
-});
-      </script>
+#floatright
+{
+    width: 266px;
+    float: right;
+    overflow-wrap: break-word;
+}
+    </style>
+    <body>
+
         <img src="banner.png" alt="Welcome to Aviva!"><hr>
 					
-        <p>Welcome to Aviva, a modern dollz site. The goal here is to breath life back into the dollz community by sharing archived dollz from long lost sites and the means to make and share your own dollz! This site is a project by Liliana @ <a target="_blank" href="https://roxelle.neocities.org">Roxelle.</a> (did the box layout give it away? lol) If you'd like to contribute by donating finished dollz, bases, graphics, or cool dollz-related links you find, check the <ins>submit</ins> section in the left sidebar. If you have a dollz site and want to be sisters, <ins>apply</ins> for sister site on the right. Don't worry! If you don't make it, we can still be affiliates.<br><br>
+        <div class="paracont">
+            <p><span class="updatet">You can scroll in the sidebars!</span><br>
+            Welcome to Aviva, a modern dollz site. The goal here is to breath life back into the dollz community by sharing archived dollz from long lost sites and the means to make and share your own dollz! This site is a project by Liliana @ <a target="_blank" href="https://roxelle.neocities.org">Roxelle.</a> (did the box layout give it away? lol) If you'd like to contribute by donating finished dollz, bases, graphics, or cool dollz-related links you find, check the <ins>submit</ins> section in the left sidebar. If you have a dollz site and want to be sisters, <ins>apply</ins> for sister site on the right. Don't worry! If you don't make it, we can still be affiliates.<br><br>
         
-        Please check out our wide array of dollz and dollz bases! Feel free to use whatever without credit, but, I would <i>genuinely appreciate</i> a link-back, as I want to get the word out about dollz and get more people in the doll-making community!</p>
-        
-        <div class="inlinediv">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <a id="bookmarkme" href="#" title="bookmark this page"><image src="graphics/bookmark.gif"></a>  
+            Please check out our wide array of dollz and dollz bases! Feel free to use whatever without credit, but, I would <i>genuinely appreciate</i> a link-back, as I want to get the word out about dollz and get more people in the doll-making community!</p>
         </div>
-        <div class="inlinediv">
-            <p>ukfyj,gufdyjtfugiuseasdfghijytr76esaezdfghjhyt76rdrtuhidtrxfcgvhbjiuy7t6r5dresdfcgvhbjiytdfcvgjuytdfytrdfcvghbjnytrdfcvghbuytrdexcfvghbjuytrdfgvhbjiuytrfgvhbji7t6trfgvhbjiu8y76tfrgvhbjiuytfgvhbjiurfgvhb</p>
+        
+        <div id="floatleft">
+          <image src="graphics/bookmark.gif" draggable="true"/> 
+        </div>
+        <div id="floatright" class="paracont">
+            <p><span class="updatet">+Updates+</span><br> 4.19.2021<br> Adding doll bases from the original doll palace web archive! I'm hoping this makes them more accessible to people who never got to use the site.</p>
         </div>
        
     </body>
 </html>
+
 
                     
