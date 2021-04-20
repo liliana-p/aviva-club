@@ -1,6 +1,17 @@
 
 /* MAIN STYLING */
 
+html
+{
+	scrollbar-width: thin;
+	scrollbar-color: #E4F5CA #F6FEDC;
+}
+
+html::-webkit-scrollbar
+{
+	width: 3px;
+}
+
 body
 {
 	background: radial-gradient(white, #ddeea1);
@@ -19,18 +30,30 @@ h1
 	text-align: center;
 }
 
+h2
+{
+	text-align: center;
+	font-size: 15px;
+	color: #ceec63;
+}
+
+h3
+{
+	color: #bad755;
+	text-shadow: white 0px 1px 0px;
+}
+
+h4
+{
+	color: white;
+	text-decoration: underline;
+	text-align: center;
+}
+
 hr 
 {
 	border: none;
 	border-top: 4px double white;
-}
-
-p 
-{
-	background: #FFBCEA;
-	border: 3px double white;
-	box-sizing: border-box;
-	padding: 5px;
 }
 
 a:not(li)
@@ -42,6 +65,12 @@ iframe
 {
 	overflow: auto;
 	overflow-x: hidden;
+}
+
+p
+{
+	padding: 2px;
+	margin: 0px;
 }
 
 /* ID STYLING */
@@ -73,8 +102,14 @@ iframe
 	border: 2px solid white;
 }
 
-
 /* CLASS STYLING */
+
+.dollcontainer
+{
+	border: #ff7ae4 3px double;
+	background-color: #FFBCEA;
+	padding: 3px;
+}
 
 .inlinediv
 {
@@ -116,3 +151,18 @@ iframe
 	text-decoration: underline;
 }
 
+.paracont
+{
+	background: #FFBCEA;
+	border: 3px double white;
+	box-sizing: border-box;
+	padding: 5px;
+	margin: 3px;
+}
+
+.updatet
+{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
